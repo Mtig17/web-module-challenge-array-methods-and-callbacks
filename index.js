@@ -81,11 +81,13 @@ Use the higher-order function getWinnersByYear to do the following:
  */
 
 function getWinnersByYear(data, getYearsCB, getWinnersCB) {
-    const winners =  getWinnersCB(data, getFinals);
+    const winners = getWinnersCB(fata, getFinals);
     const years = getYearsCB(data, getFinals);
-    return winners.map((item, index)=> `In ${years[index]}, ${item} won the world cup!`);
+    return winners.map((item, index)=> `In ${years[index]}, ${item} won the worls cup!`);
     
 }
+
+
 
 
 
@@ -108,6 +110,7 @@ function getAverageGoals(data) {
     }, 0)
     return (averageHomeGoals / data.length).toFixed(2);
  }
+ console.log(getAverageGoals(fifaData));
 
 
 
